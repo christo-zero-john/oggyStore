@@ -5,7 +5,7 @@ var dataDiv = document.getElementById("dataDiv");
 
 function setCategories(){
     dataDiv.innerHTML = `
-        <h1 class="fs-1 font-weight-normal text-center py-2 ">All Categories</h1>
+        <h1 class="fs-1 font-weight-normal text-center py-2">All Categories</h1>
         <div class="d-flex flex-row justify-content-center align-items-center flex-wrap" id="categoryDiv">
         </div>
     `
@@ -20,7 +20,7 @@ function setCategories(){
             categoryDiv.innerHTML = ''
             for(x in basic){
                 categoryDiv.innerHTML += `
-                <div class="cursor-pointer card col-5 col-md-4 m-2 my-3 mx-md-3" id="" onclick="getCategoryData('${basic[x].category.toLowerCase()}')">
+                <div class="cursor-pointer card col-5 col-md-2 m-2 my-3 mx-md-3" id="" onclick="getCategoryData('${basic[x].category.toLowerCase()}')">
                     
                     <img class="card-img p-0 m-0 categoryCardImg" src="${basic[x].img}" alt="">
                     <p class="card-footer  text-center m-0" id="">${basic[x].category}</p>
@@ -84,7 +84,7 @@ function printShoes(footwears){
     var productsDiv = document.getElementById("productsDiv");
     for(x in footwears){
         productsDiv.innerHTML += `
-            <div class= "m-2 productItem card col-5 text-center">
+            <div class= "m-2 productItem card col-5 text-center col-md-2 ">
                 <img src="/assets/footwear.png" alt="" class="card-img">
                 <div class="productDetails card-body">
                     <p class="">
@@ -108,7 +108,7 @@ function printWatches(watches){
     var productsDiv = document.getElementById("productsDiv");
     for(x in watches){
         productsDiv.innerHTML += `
-            <div class= "m-2 productItem card col-5 text-center">
+            <div class= "m-2 productItem card col-5 text-center col-md-2 ">
                 <img src="/assets/watches.jpg" alt="" class="card-img">
                 <div class="productDetails card-body">
                     <p class="">
@@ -134,7 +134,7 @@ function printSpeakers(speakers){
     var productsDiv = document.getElementById("productsDiv");
     for(x in speakers){
         productsDiv.innerHTML += `
-            <div class= "m-2 productItem card col-5 text-center">
+            <div class= "m-2 productItem card col-5 text-center col-md-2 ">
                 <img src="/assets/speakers.png" alt="" class="card-img">
                 <div class="productDetails card-body">
                     <p class="">
@@ -159,7 +159,7 @@ function printEarbuds(earbuds){
     var productsDiv = document.getElementById("productsDiv");
     for(x in earbuds){
         productsDiv.innerHTML += `
-            <div class= "m-2 productItem card col-5 text-center">
+            <div class= "m-2 productItem card col-5 text-center col-md-2 ">
                 <img src="/assets/earbuds.jpg" alt="" class="card-img">
                 <div class="productDetails card-body">
                     <p class="">
@@ -184,7 +184,7 @@ function printHeadsets(headsets){
     var productsDiv = document.getElementById("productsDiv");
     for(x in headsets){
         productsDiv.innerHTML += `
-            <div class= "m-2 productItem card col-5 text-center">
+            <div class= "m-2 productItem card col-5 text-center col-md-2 ">
                 <img src="/assets/headsets.jpg" alt="" class="card-img">
                 <div class="productDetails card-body">
                     <p class="">
@@ -216,7 +216,7 @@ function printClothes(clothes){
         //     }
         // }
         productsDiv.innerHTML += `
-            <div class="m-2 productItem card col-5 text-center">
+            <div class="m-2 productItem card col-5 text-center col-md-2 ">
                 <img src="/assets/clothing.webp" alt="" class="card-img">
                 <div class="productDetails card-body">
                     <p class="">
