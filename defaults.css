@@ -394,3 +394,7 @@
 .ls-01{
   letter-spacing: 0.1;
 }
+
+.cursor-pointer{
+  cursor: pointer;
+}
