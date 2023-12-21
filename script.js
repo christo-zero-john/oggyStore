@@ -5,6 +5,7 @@ var dataDiv = document.getElementById("dataDiv");
 
 function setCategories(){
     dataDiv.innerHTML = `
+        <h1 class="fs-1 font-weight-normal text-center">Categories</h1>
         <div class="d-flex flex-row justify-content-center align-items-center flex-wrap" id="categoryDiv">
         </div>
     `
@@ -19,7 +20,7 @@ function setCategories(){
             categoryDiv.innerHTML = ''
             for(x in basic){
                 categoryDiv.innerHTML += `
-                <div class="cursor-pointer card col-5 col-md-4 m-3" id="" onclick="getCategoryData('${basic[x].category.toLowerCase()}')">
+                <div class="cursor-pointer card col-5 col-md-4 m-2 my-3 mx-md-3" id="" onclick="getCategoryData('${basic[x].category.toLowerCase()}')">
                     
                     <img class="card-img p-0 m-0 categoryCardImg" src="${basic[x].img}" alt="">
                     <p class="card-footer  text-center m-0" id="">${basic[x].category}</p>
