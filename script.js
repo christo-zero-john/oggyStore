@@ -5,7 +5,7 @@ var dataDiv = document.getElementById("dataDiv");
 
 function setCategories(){
     dataDiv.innerHTML = `
-        <h1 class="fs-1 font-weight-normal text-center">Categories</h1>
+        <h1 class="fs-1 font-weight-normal text-center py-2 ">All Categories</h1>
         <div class="d-flex flex-row justify-content-center align-items-center flex-wrap" id="categoryDiv">
         </div>
     `
@@ -102,7 +102,7 @@ function printShoes(footwears){
 function printWatches(watches){
     console.log("PrintWatches invoked",watches)
     dataDiv.innerHTML = `
-        <h1 class="fs-1 font-weight-normal text-center py-3">Category: Watches</h1>
+        <h1 class="fs-1 font-weight-normal text-center py-2 py-3">Category: Watches</h1>
         <div class="d-flex flex-row justify-content-center align-items-center flex-wrap" id="productsDiv"></div>
     `
     var productsDiv = document.getElementById("productsDiv");
@@ -128,7 +128,7 @@ function printWatches(watches){
 function printSpeakers(speakers){
     console.log("Printspeakers invoked",speakers)
     dataDiv.innerHTML = `
-        <h1 class="fs-1 font-weight-normal text-center py-3">Category: speakers</h1>
+        <h1 class="fs-1 font-weight-normal text-center py-2 py-3">Category: speakers</h1>
         <div class="d-flex flex-row justify-content-center align-items-center flex-wrap" id="productsDiv"></div>
     `
     var productsDiv = document.getElementById("productsDiv");
@@ -153,7 +153,7 @@ function printSpeakers(speakers){
 function printEarbuds(earbuds){
     console.log("Printearbuds invoked",earbuds)
     dataDiv.innerHTML = `
-        <h1 class="fs-1 font-weight-normal text-center py-3">Category: earbuds</h1>
+        <h1 class="fs-1 font-weight-normal text-center py-2 py-3">Category: earbuds</h1>
         <div class="d-flex flex-row justify-content-center align-items-center flex-wrap" id="productsDiv"></div>
     `
     var productsDiv = document.getElementById("productsDiv");
@@ -178,7 +178,7 @@ function printEarbuds(earbuds){
 function printHeadsets(headsets){
     console.log("Printheadsets invoked",headsets)
     dataDiv.innerHTML = `
-        <h1 class="fs-1 font-weight-normal text-center py-3">Category: headsets</h1>
+        <h1 class="fs-1 font-weight-normal text-center py-2 py-3">Category: headsets</h1>
         <div class="d-flex flex-row justify-content-center align-items-center flex-wrap" id="productsDiv"></div>
     `
     var productsDiv = document.getElementById("productsDiv");
@@ -203,7 +203,7 @@ function printHeadsets(headsets){
 function printClothes(clothes){
     console.log("Printclothes invoked",clothes)
     dataDiv.innerHTML = `
-        <h1 class="fs-1 font-weight-normal text-center py-3">Category: clothes</h1>
+        <h1 class="fs-1 font-weight-normal text-center py-2 py-3">Category: clothes</h1>
         <div class="d-flex flex-row justify-content-center align-items-center flex-wrap" id="productsDiv"></div>
     `
     var productsDiv = document.getElementById("productsDiv");
